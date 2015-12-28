@@ -1,7 +1,6 @@
 package com.lee.leefundamentalsdk.activity;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -13,7 +12,7 @@ import com.lee.leefundamentalsdk.R;
 import com.lee.leefundamentalsdk.entity.JsonObject;
 import com.lee.leefundamentalsdk.entity.Son;
 
-import org.json.JSONObject;
+
 
 public class MainActivity extends Activity {
 
