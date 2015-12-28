@@ -35,25 +35,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e("Error", "MainActivity onResume");
-        int[] a = new int[3];
-        a[0]=3;
-        a[1]=4;
-        a[2]=5;
-        JsonObject jsonObject = new JsonObject("lee",27,a);
-        String jsonString = testGsonFromObjectToJson(jsonObject);
-        Log.e("Error", "Gson convertion finishes");
+
     }
 
-    private String testGsonFromObjectToJson(Object object) {
-        Gson gson = new Gson();
-        return gson.toJson(object);
-    }
-
-    private Son testGsonFromJsonToObject(String jsonStr) {
-        Gson gson = new Gson();
-        return gson.fromJson(jsonStr,Son.class);
-    }
 
     @Override
     protected void onPause() {
